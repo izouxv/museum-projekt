@@ -1,17 +1,6 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:example/shared/util/player_sprite_sheet.dart';
 
-///
-/// Created by
-///
-/// ─▄▀─▄▀
-/// ──▀──▀
-/// █▀▀▀▀▀█▄
-/// █░░░░░█─█
-/// ▀▄▄▄▄▄▀▀
-///
-/// Rafaelbarbosatec
-/// on 19/10/21
 class MyPlayer extends SimplePlayer with ObjectCollision {
   MyPlayer(Vector2 position)
       : super(

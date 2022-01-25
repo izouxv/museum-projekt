@@ -59,7 +59,7 @@ class SimpleExampleGame extends StatelessWidget {
       ),
       map: TiledWorldMap(
         'tiled/mapa2.json',
-        forceTileSize: Size(16, 16),
+        forceTileSize: Size(32, 32),
         objectsBuilder: {
           'chest': (properties) => Chest(properties.position),
           'mission01': (properties) => WizardNPC(Vector2(0, 0))
@@ -83,7 +83,7 @@ class WizardNPC extends GameDecoration {
   ) : super.withAnimation(
             animation: CommonSpriteSheet.chestAnimated,
             position: position,
-            size: Vector2(16 * 0.8, 16));
+            size: Vector2(32 * 0.8, 32));
 
   @override
   void update(double dt) {
