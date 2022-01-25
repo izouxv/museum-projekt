@@ -11,7 +11,7 @@
 ## Credits
 
  * This Repo based on Bonfire made by Rafael Barbosa. 
- * Bonfire itself is based on the flame engine.
+ * Bonfire itself is based on the flame.
  * ...
  
 
