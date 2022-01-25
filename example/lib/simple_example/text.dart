@@ -1,5 +1,4 @@
 import 'package:example/simple_example/simple_example_game.dart';
-import 'package:flutter/cupertino.dart';
 
 class Texter {
   String getText(String textId) {
