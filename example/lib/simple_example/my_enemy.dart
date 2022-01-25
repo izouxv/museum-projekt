@@ -1,17 +1,6 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:example/shared/util/enemy_sprite_sheet.dart';
 
-///
-/// Created by
-///
-/// ─▄▀─▄▀
-/// ──▀──▀
-/// █▀▀▀▀▀█▄
-/// █░░░░░█─█
-/// ▀▄▄▄▄▄▀▀
-///
-/// Rafaelbarbosatec
-/// on 19/10/21
 class MyEnemy extends SimpleEnemy with ObjectCollision {
   MyEnemy(Vector2 position)
       : super(
