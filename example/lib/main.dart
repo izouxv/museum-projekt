@@ -75,7 +75,6 @@ class Menu extends StatelessWidget {
                 ),
                 child: Text('German'),
                 onPressed: () {
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => GameManualMap()),);
                   languageSet = 'ger';
                 },
               ),
@@ -93,9 +92,8 @@ class Menu extends StatelessWidget {
                     ),
                   ),
                 ),
-                child: Text('Tiled Map'),
+                child: Text('English'),
                 onPressed: () {
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => GameTiledMap(),),);
                   languageSet = 'eng';
                 },
               ),
@@ -107,7 +105,7 @@ class Menu extends StatelessWidget {
         height: 40,
         child: Center(
           child: Text(
-            'Crafted with heart by Johannes Parth & Martin Henle',
+            'Crafted with ♥ by Johannes Parth & Martin Henle',
             style: TextStyle(fontSize: 18),
           ),
         ),
