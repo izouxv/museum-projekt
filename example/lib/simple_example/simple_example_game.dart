@@ -6,6 +6,7 @@ import 'package:example/simple_example/my_player.dart';
 import 'package:flutter/material.dart';
 
 import 'package:example/shared/decoration/chest.dart';
+import 'package:example/shared/decoration/wizardnpc.dart';
 //import 'package:example/shared/decoration/barrel_dragable.dart';
 //import 'package:example/shared/decoration/torch.dart';
 //import 'package:example/shared/enemy/goblin.dart';
@@ -73,47 +74,5 @@ class SimpleExampleGame extends StatelessWidget {
       ),
       player: MyPlayer(Vector2(40, 60)),
     );
-  }
-}
-
-class WizardNPC extends GameDecoration {
-  bool _showConversation = false;
-  WizardNPC(
-    Vector2 position,
-  ) : super.withAnimation(
-            animation: CommonSpriteSheet.npcAnimated,
-            position: position,
-            size: Vector2(32 * 0.8, 32));
-
-  @override
-  void update(double dt) {
-    super.update(dt);
-    if (gameRef.player != null) {
-      this.seeComponent(
-        gameRef.player!,
-        observed: (player) {
-          if (!_showConversation) {
-            _showConversation = true;
-            _showIntroduction();
-          }
-        },
-        radiusVision: (2 * 16),
-      );
-    }
-  }
-
-// talk Dialog
-  void _showIntroduction() {
-    TalkDialog.show(
-        gameRef.context,
-        [
-          Say(
-            text: [
-              TextSpan(text: Texter().getText('intro01')),
-            ],
-          ),
-        ],
-        onChangeTalk: (index) {},
-        onFinish: () {});
   }
 }
