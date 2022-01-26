@@ -49,7 +49,7 @@
         {
          "draworder":"topdown",
          "id":5,
-         "name":"Object Layer 1",
+         "name":"wizardnpc",
          "objects":[
                 {
                  "height":16,
@@ -61,6 +61,17 @@
                  "width":16,
                  "x":159.504164420004,
                  "y":143.653479749642
+                }, 
+                {
+                 "height":16,
+                 "id":102,
+                 "name":"wizardnpc",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":143.846544748087,
+                 "y":63.7417484417589
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -69,7 +80,7 @@
          "y":0
         }],
  "nextlayerid":22,
- "nextobjectid":102,
+ "nextobjectid":103,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
