@@ -10,6 +10,10 @@ class Texter {
           setText =
               'Oh je, beim üben meiner Zauberkräfte im Museum ist die Drehbank in ihre Einzelteile zerfallen. Kannst du mir helfen Sie wieder zusammen zu bauen? Möglicherweise wollte ich sie nur in eine Truhe stecken, damit sie aufgeräumt ist...';
       }
+      switch (textId) {
+        case 'obstacle01':
+          setText = 'This ist Obstacle 2 Text!';
+      }
     }
 
     if (languageSet == 'eng') {

@@ -72,7 +72,6 @@ class Chest extends GameDecoration with TapGesture {
           position.translate(width * 0, 0).x,
           position.y - height * 0,
         ),
-        30,
       ),
     );
 

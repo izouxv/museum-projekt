@@ -1,12 +1,13 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:example/manual_map/dungeon_map.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
+import 'package:example/simple_example/text.dart';
+import 'package:flutter/widgets.dart';
 
 class PotionLife extends GameDecoration with Sensor {
-  final double life;
-  double _lifeDistributed = 0;
+  bool _showConversation = false;
 
-  PotionLife(Vector2 position, this.life)
+  PotionLife(Vector2 position)
       : super.withSprite(
           sprite: CommonSpriteSheet.potionLifeSprite,
           position: position,
@@ -16,15 +17,25 @@ class PotionLife extends GameDecoration with Sensor {
   @override
   void onContact(GameComponent collision) {
     if (collision is Player) {
-      gameRef.getValueGenerator(Duration(seconds: 1), onChange: (value) {
-        if (_lifeDistributed < life) {
-          double newLife = life * value - _lifeDistributed;
-          _lifeDistributed += newLife;
-          collision.addLife(newLife);
-        }
-      }).start();
+      _showConversation = true;
+      _showIntroduction();
 
       removeFromParent();
     }
+  }
+
+  // talk Dialog
+  void _showIntroduction() {
+    TalkDialog.show(
+        gameRef.context,
+        [
+          Say(
+            text: [
+              TextSpan(text: Texter().getText('obstacle01')),
+            ],
+          ),
+        ],
+        onChangeTalk: (index) {},
+        onFinish: () {});
   }
 }
