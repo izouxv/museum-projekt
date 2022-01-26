@@ -15,7 +15,8 @@ class Texter {
     if (languageSet == 'eng') {
       switch (textId) {
         case 'intro01':
-          setText = 'TODAY YEAH';
+          setText =
+              'Oh dear, the lathe shattered into 1000 pieces in an explosion. Can you help reassemble them?';
       }
     }
 
