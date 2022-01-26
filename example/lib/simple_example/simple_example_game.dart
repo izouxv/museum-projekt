@@ -16,7 +16,7 @@ import 'package:bonfire/base/bonfire_game_interface.dart';
 //import 'package:flame/components.dart';
 
 //import 'package:example/shared/util/player_sprite_sheet.dart';
-import 'package:example/shared/util/common_sprite_sheet.dart';
+//import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/simple_example/text.dart';
 //import 'package:example/shared/decoration/mission01.dart';
 
