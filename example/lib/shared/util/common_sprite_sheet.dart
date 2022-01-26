@@ -152,6 +152,15 @@ class CommonSpriteSheet {
         ),
       );
 
+  static Future<SpriteAnimation> get npcAnimated => SpriteAnimation.load(
+        "itens/npc_spritesheet.png",
+        SpriteAnimationData.sequenced(
+          amount: 8,
+          stepTime: 0.1,
+          textureSize: Vector2(16, 16),
+        ),
+      );
+
   static Future<SpriteAnimation> get torchAnimated => SpriteAnimation.load(
         "itens/torch_spritesheet.png",
         SpriteAnimationData.sequenced(

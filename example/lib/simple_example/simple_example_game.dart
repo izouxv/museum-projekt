@@ -1,6 +1,6 @@
 //import 'package:example/simple_example/bonfire_ref.dart';
 import 'package:bonfire/bonfire.dart';
-import 'package:bonfire/background/background_image_game.dart';
+//import 'package:bonfire/background/background_image_game.dart';
 
 import 'package:example/simple_example/my_player.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +12,9 @@ import 'package:example/shared/decoration/chest.dart';
 //import 'package:example/manual_map/dungeon_map.dart';
 
 import 'package:bonfire/base/bonfire_game_interface.dart';
-import 'package:flame/components.dart';
+//import 'package:flame/components.dart';
 
-import 'package:example/shared/util/player_sprite_sheet.dart';
+//import 'package:example/shared/util/player_sprite_sheet.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/simple_example/text.dart';
 //import 'package:example/shared/decoration/mission01.dart';
@@ -81,7 +81,7 @@ class WizardNPC extends GameDecoration {
   WizardNPC(
     Vector2 position,
   ) : super.withAnimation(
-            animation: CommonSpriteSheet.chestAnimated,
+            animation: CommonSpriteSheet.npcAnimated,
             position: position,
             size: Vector2(32 * 0.8, 32));
 

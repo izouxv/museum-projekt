@@ -42,7 +42,7 @@ class Menu extends StatelessWidget {
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(5),
                     ),
                   ),
                 ),
