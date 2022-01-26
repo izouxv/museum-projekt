@@ -8,10 +8,11 @@ class WizardNPC extends GameDecoration {
   WizardNPC(
     Vector2 position,
   ) : super.withAnimation(
-            animation: CommonSpriteSheet.npcAnimated,
+            animation: CommonSpriteSheet.torchAnimated,
             position: position,
             size: Vector2(32 * 0.8, 32));
 
+// Show Dialog when goes to NPC
   @override
   void update(double dt) {
     super.update(dt);

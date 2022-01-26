@@ -8,7 +8,7 @@ class Texter {
       switch (textId) {
         case 'intro01':
           setText =
-              'Oh je, bei einer Explosion ist die Drehbank in 1000 Teile zerfallen. Kannst du helfen Sie wieder zusammenbauen?';
+              'Oh je, beim üben meiner Zauberkräfte im Museum ist die Drehbank in ihre Einzelteile zerfallen. Kannst du mir helfen Sie wieder zusammen zu bauen? Ursprünglich wollte ich sie nur in eine Truhe stecken, damit sie aufgeräumt ist.';
       }
     }
 
@@ -16,7 +16,7 @@ class Texter {
       switch (textId) {
         case 'intro01':
           setText =
-              'Oh dear, the lathe shattered into 1000 pieces in an explosion. Can you help reassemble them?';
+              'Oh dear, the lathe shattered into pieces in an explosion. Can you help me reassemble it?';
       }
     }
 
