@@ -63,7 +63,7 @@ class SimpleExampleGame extends StatelessWidget {
         forceTileSize: Size(32, 32),
         objectsBuilder: {
           'chest': (properties) => Chest(properties.position),
-          'wizardnpc': (properties) => WizardNPC(Vector2(150, 150))
+          'wizardnpc': (properties) => WizardNPC(properties.position)
         },
       ),
       //background: BackgroundImageGame(imagePath: "tileset/image_bg.jpeg", offset: Vector2(0, 0)),
@@ -72,7 +72,7 @@ class SimpleExampleGame extends StatelessWidget {
         smoothCameraEnabled: true,
         smoothCameraSpeed: 2,
       ),
-      player: MyPlayer(Vector2(40, 60)),
+      player: MyPlayer(Vector2(100, 75)),
     );
   }
 }
