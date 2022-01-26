@@ -8,7 +8,7 @@ class Texter {
       switch (textId) {
         case 'intro01':
           setText =
-              'Oh je, beim üben meiner Zauberkräfte im Museum ist die Drehbank in ihre Einzelteile zerfallen. Kannst du mir helfen Sie wieder zusammen zu bauen? Ursprünglich wollte ich sie nur in eine Truhe stecken, damit sie aufgeräumt ist.';
+              'Oh je, beim üben meiner Zauberkräfte im Museum ist die Drehbank in ihre Einzelteile zerfallen. Kannst du mir helfen Sie wieder zusammen zu bauen? Möglicherweise wollte ich sie nur in eine Truhe stecken, damit sie aufgeräumt ist...';
       }
     }
 
