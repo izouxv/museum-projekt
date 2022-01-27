@@ -1,15 +1,15 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:example/manual_map/dungeon_map.dart';
-import 'package:example/shared/decoration/obstacle_one.dart';
+import 'package:example/shared/decoration/obstacle_three.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:flutter/widgets.dart';
 
-class Chest extends GameDecoration with TapGesture {
+class ChestThree extends GameDecoration with TapGesture {
   bool _observedPlayer = false;
 
   late TextPaint _textConfig;
-  Chest(Vector2 position)
+  ChestThree(Vector2 position)
       : super.withAnimation(
           animation: CommonSpriteSheet.chestAnimated,
           size: Vector2.all(DungeonMap.tileSize * 0.6),
@@ -59,7 +59,7 @@ class Chest extends GameDecoration with TapGesture {
   void onTap() {
     FlameAudio.play('chestopen.mp3');
     if (_observedPlayer) {
-      _addObstacleOne();
+      _addObstacleThree();
       removeFromParent();
     }
   }
@@ -67,9 +67,9 @@ class Chest extends GameDecoration with TapGesture {
   @override
   void onTapCancel() {}
 
-  void _addObstacleOne() {
+  void _addObstacleThree() {
     gameRef.add(
-      ObstacleOne(
+      ObstacleThree(
         Vector2(
           position.translate(width * 0, 0).x,
           position.y - height * 0,

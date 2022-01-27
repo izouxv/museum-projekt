@@ -9,7 +9,7 @@ class ObstacleTwo extends GameDecoration with Sensor {
 
   ObstacleTwo(Vector2 position)
       : super.withSprite(
-          sprite: CommonSpriteSheet.testSprite,
+          sprite: CommonSpriteSheet.obstacleTwoSprite,
           position: position,
           size: Vector2.all(DungeonMap.tileSize * 0.5),
         );

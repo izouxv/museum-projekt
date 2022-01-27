@@ -1,4 +1,5 @@
 import 'package:bonfire/bonfire.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:example/manual_map/dungeon_map.dart';
 import 'package:example/shared/decoration/obstacle_two.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
@@ -57,6 +58,7 @@ class ChestTwo extends GameDecoration with TapGesture {
   @override
   void onTap() {
     if (_observedPlayer) {
+      FlameAudio.play('chestopen.mp3');
       _addObstacleTwo();
       removeFromParent();
     }

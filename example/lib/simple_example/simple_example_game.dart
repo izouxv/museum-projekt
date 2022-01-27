@@ -1,5 +1,6 @@
 //import 'package:example/simple_example/bonfire_ref.dart';
 import 'package:bonfire/bonfire.dart';
+
 //import 'package:bonfire/background/background_image_game.dart';
 
 import 'package:example/simple_example/my_player.dart';
@@ -7,6 +8,7 @@ import 'package:flutter/material.dart';
 
 import 'package:example/shared/decoration/chest.dart';
 import 'package:example/shared/decoration/chest_two.dart';
+import 'package:example/shared/decoration/chest_three.dart';
 import 'package:example/shared/decoration/wizardnpc.dart';
 
 import 'package:flame_audio/flame_audio.dart';
@@ -66,6 +68,7 @@ class SimpleExampleGame extends StatelessWidget {
         objectsBuilder: {
           'chest': (properties) => Chest(properties.position),
           'chest_two': (properties) => ChestTwo(properties.position),
+          'chest_three': (properties) => ChestThree(properties.position),
           'wizardnpc': (properties) => WizardNPC(properties.position)
         },
       ),
