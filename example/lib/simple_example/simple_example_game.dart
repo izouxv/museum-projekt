@@ -57,7 +57,7 @@ class SimpleExampleGame extends StatelessWidget {
 
   Widget build(BuildContext context) {
     //Background Music
-    FlameAudio.loopLongAudio('background.mp3');
+    FlameAudio.loopLongAudio('background.mp3', volume: 0.3);
     return BonfireTiledWidget(
       joystick: Joystick(
         directional: JoystickDirectional(),
