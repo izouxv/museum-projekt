@@ -1,5 +1,4 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:flame_audio/flame_audio.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/simple_example/text.dart';
 import 'package:flutter/widgets.dart';
@@ -16,7 +15,6 @@ class WizardNPC extends GameDecoration {
 // Player Detection
   @override
   void update(double dt) {
-    FlameAudio.play('wizardnpc.mp3');
     super.update(dt);
     if (gameRef.player != null) {
       this.seeComponent(
