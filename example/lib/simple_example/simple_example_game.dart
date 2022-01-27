@@ -4,10 +4,10 @@ import 'package:bonfire/bonfire.dart';
 
 import 'package:example/simple_example/my_player.dart';
 import 'package:flutter/material.dart';
-import 'package:flame_audio/flame_audio.dart';
 
 import 'package:example/shared/decoration/chest.dart';
 import 'package:example/shared/decoration/wizardnpc.dart';
+import 'package:flame_audio/flame_audio.dart';
 //import 'package:example/shared/decoration/barrel_dragable.dart';
 //import 'package:example/shared/decoration/torch.dart';
 //import 'package:example/shared/enemy/goblin.dart';
@@ -53,7 +53,8 @@ class SimpleExampleGame extends StatelessWidget {
 
   Widget build(BuildContext context) {
     print(Texter().getText('intro01'));
-
+    //Background Music
+    FlameAudio.play('background.mp3');
     return BonfireTiledWidget(
       joystick: Joystick(
         directional: JoystickDirectional(),
