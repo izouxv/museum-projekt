@@ -1,4 +1,5 @@
 import 'package:bonfire/bonfire.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/simple_example/text.dart';
 import 'package:flutter/widgets.dart';
@@ -12,9 +13,10 @@ class WizardNPC extends GameDecoration {
             position: position,
             size: Vector2(32 * 0.8, 32));
 
-// Show Dialog when goes to NPC
+// Player Detection
   @override
   void update(double dt) {
+    FlameAudio.play('wizardnpc.mp3');
     super.update(dt);
     if (gameRef.player != null) {
       this.seeComponent(
@@ -25,7 +27,7 @@ class WizardNPC extends GameDecoration {
             _showIntroduction();
           }
         },
-        radiusVision: (2 * 16),
+        radiusVision: (3 * 16),
       );
     }
   }
