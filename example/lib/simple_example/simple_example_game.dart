@@ -4,6 +4,7 @@ import 'package:bonfire/bonfire.dart';
 
 import 'package:example/simple_example/my_player.dart';
 import 'package:flutter/material.dart';
+import 'package:flame_audio/flame_audio.dart';
 
 import 'package:example/shared/decoration/chest.dart';
 import 'package:example/shared/decoration/wizardnpc.dart';
@@ -50,7 +51,6 @@ mixin BonfireHasGameRef {
 class SimpleExampleGame extends StatelessWidget {
   const SimpleExampleGame({Key? key}) : super(key: key);
 
-  @override
   Widget build(BuildContext context) {
     print(Texter().getText('intro01'));
 
