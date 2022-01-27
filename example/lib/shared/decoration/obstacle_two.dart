@@ -1,4 +1,5 @@
 import 'package:bonfire/bonfire.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:example/manual_map/dungeon_map.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/simple_example/text.dart';
@@ -16,6 +17,7 @@ class ObstacleTwo extends GameDecoration with Sensor {
 
   @override
   void onContact(GameComponent collision) {
+    FlameAudio.play('itemget.mp3');
     if (collision is Player) {
       _showConversation = true;
       _showIntroduction();
