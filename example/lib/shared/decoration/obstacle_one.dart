@@ -4,12 +4,12 @@ import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/simple_example/text.dart';
 import 'package:flutter/widgets.dart';
 
-class PotionLife extends GameDecoration with Sensor {
+class ObstacleOne extends GameDecoration with Sensor {
   bool _showConversation = false;
 
-  PotionLife(Vector2 position)
+  ObstacleOne(Vector2 position)
       : super.withSprite(
-          sprite: CommonSpriteSheet.potionLifeSprite,
+          sprite: CommonSpriteSheet.testSprite,
           position: position,
           size: Vector2.all(DungeonMap.tileSize * 0.5),
         );

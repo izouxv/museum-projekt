@@ -52,7 +52,6 @@ class SimpleExampleGame extends StatelessWidget {
   const SimpleExampleGame({Key? key}) : super(key: key);
 
   Widget build(BuildContext context) {
-    print(Texter().getText('intro01'));
     //Background Music
     FlameAudio.play('background.mp3');
     return BonfireTiledWidget(

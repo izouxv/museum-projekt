@@ -173,6 +173,9 @@ class CommonSpriteSheet {
   static Future<Sprite> get barrelSprite => Sprite.load('itens/barrel.png');
   static Future<Sprite> get columnSprite => Sprite.load('itens/column.png');
   static Future<Sprite> get spikesSprite => Sprite.load('itens/spikes.png');
-  static Future<Sprite> get potionLifeSprite =>
-      Sprite.load('itens/potion_life.png');
+  static Future<Sprite> get testSprite => Sprite.load('itens/obstacle_one.png');
+
+  /*static Future<Sprite> get potionSprite =>
+      Sprite.load('itens/obstacle_one.png');
+      */
 }

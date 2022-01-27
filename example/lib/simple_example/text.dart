@@ -12,7 +12,7 @@ class Texter {
       }
       switch (textId) {
         case 'obstacle01':
-          setText = 'This ist Obstacle 2 Text!';
+          setText = 'Sehr gut, du hast Obstacle 1 gefunden! BESCHREIBUNG...';
       }
     }
 

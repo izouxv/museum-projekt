@@ -1,6 +1,6 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:example/manual_map/dungeon_map.dart';
-import 'package:example/shared/decoration/potion_life.dart';
+import 'package:example/shared/decoration/obstacle_one.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:flutter/widgets.dart';
 
@@ -57,7 +57,7 @@ class Chest extends GameDecoration with TapGesture {
   @override
   void onTap() {
     if (_observedPlayer) {
-      _addPotions();
+      _addObstacleOne();
       removeFromParent();
     }
   }
@@ -65,9 +65,9 @@ class Chest extends GameDecoration with TapGesture {
   @override
   void onTapCancel() {}
 
-  void _addPotions() {
+  void _addObstacleOne() {
     gameRef.add(
-      PotionLife(
+      ObstacleOne(
         Vector2(
           position.translate(width * 0, 0).x,
           position.y - height * 0,
