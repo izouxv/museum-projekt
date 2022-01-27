@@ -6,7 +6,9 @@ import 'package:example/simple_example/my_player.dart';
 import 'package:flutter/material.dart';
 
 import 'package:example/shared/decoration/chest.dart';
+import 'package:example/shared/decoration/chest_two.dart';
 import 'package:example/shared/decoration/wizardnpc.dart';
+
 import 'package:flame_audio/flame_audio.dart';
 //import 'package:example/shared/decoration/barrel_dragable.dart';
 //import 'package:example/shared/decoration/torch.dart';
@@ -18,7 +20,7 @@ import 'package:bonfire/base/bonfire_game_interface.dart';
 
 //import 'package:example/shared/util/player_sprite_sheet.dart';
 //import 'package:example/shared/util/common_sprite_sheet.dart';
-import 'package:example/simple_example/text.dart';
+//import 'package:example/simple_example/text.dart';
 //import 'package:example/shared/decoration/mission01.dart';
 
 String languageSet = 'ger';
@@ -63,6 +65,7 @@ class SimpleExampleGame extends StatelessWidget {
         forceTileSize: Size(32, 32),
         objectsBuilder: {
           'chest': (properties) => Chest(properties.position),
+          'chest_two': (properties) => ChestTwo(properties.position),
           'wizardnpc': (properties) => WizardNPC(properties.position)
         },
       ),

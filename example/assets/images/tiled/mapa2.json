@@ -74,6 +74,17 @@
                  "width":16,
                  "x":159.727356557638,
                  "y":111.991748441759
+                }, 
+                {
+                 "height":16,
+                 "id":104,
+                 "name":"chest_two",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":143.333333333333,
+                 "y":47.6666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -82,7 +93,7 @@
          "y":0
         }],
  "nextlayerid":22,
- "nextobjectid":103,
+ "nextobjectid":105,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
