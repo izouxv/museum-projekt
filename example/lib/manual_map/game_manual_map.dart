@@ -52,7 +52,7 @@ class GameManualMap extends StatelessWidget implements GameListener {
         player: Knight(
           Vector2((4 * DungeonMap.tileSize), (6 * DungeonMap.tileSize)),
         ),
-        interface: KnightInterface(),
+        interface: PlayerInterface(),
         map: DungeonMap.map(),
         enemies: DungeonMap.enemies(),
         decorations: DungeonMap.decorations(),

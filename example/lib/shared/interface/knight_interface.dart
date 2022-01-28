@@ -2,7 +2,7 @@ import 'package:bonfire/bonfire.dart';
 import 'package:example/shared/player/knight.dart';
 import 'package:flutter/material.dart';
 
-class KnightInterface extends GameInterface {
+class PlayerInterface extends GameInterface {
   static const followerWidgetTestId = 'BUTTON';
 
   @override

@@ -81,7 +81,7 @@ class SimpleExampleGame extends StatelessWidget {
         smoothCameraSpeed: 2,
       ),
       player: MyPlayer(Vector2(100, 75)),
-      interface: KnightInterface(),
+      interface: PlayerInterface(),
     );
   }
 }
