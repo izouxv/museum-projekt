@@ -39,6 +39,7 @@ class WizardNPC extends GameDecoration {
             text: [
               TextSpan(text: Texter().getText('intro01')),
             ],
+            personSayDirection: PersonSayDirection.RIGHT,
           ),
         ],
         onChangeTalk: (index) {},
