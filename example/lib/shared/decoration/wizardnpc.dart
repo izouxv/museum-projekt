@@ -8,7 +8,7 @@ class WizardNPC extends GameDecoration {
   WizardNPC(
     Vector2 position,
   ) : super.withAnimation(
-            animation: CommonSpriteSheet.torchAnimated,
+            animation: CommonSpriteSheet.npcAnimated,
             position: position,
             size: Vector2(32 * 0.8, 32));
 
