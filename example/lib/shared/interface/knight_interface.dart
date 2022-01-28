@@ -1,5 +1,4 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/shared/interface/bar_life_component.dart';
 import 'package:example/shared/player/knight.dart';
 import 'package:flutter/material.dart';
 
@@ -8,33 +7,6 @@ class KnightInterface extends GameInterface {
 
   @override
   void onMount() {
-    add(BarLifeComponent());
-    add(InterfaceComponent(
-      sprite: Sprite.load('blue_button1.png'),
-      spriteSelected: Sprite.load('blue_button2.png'),
-      size: Vector2(40, 40),
-      id: 5,
-      position: Vector2(150, 20),
-      onTapComponent: (selected) {
-        final player = gameRef.player;
-        if (player != null) {
-          (player as Knight).showEmote();
-        }
-      },
-    ));
-    add(InterfaceComponent(
-      sprite: Sprite.load('blue_button1.png'),
-      spriteSelected: Sprite.load('blue_button2.png'),
-      size: Vector2(40, 40),
-      id: 5,
-      position: Vector2(200, 20),
-      selectable: true,
-      onTapComponent: (selected) {
-        if (gameRef.player != null) {
-          (gameRef.player as Knight).changeControllerToVisibleEnemy();
-        }
-      },
-    ));
     add(InterfaceComponent(
       sprite: Sprite.load('blue_button1.png'),
       spriteSelected: Sprite.load('blue_button2.png'),

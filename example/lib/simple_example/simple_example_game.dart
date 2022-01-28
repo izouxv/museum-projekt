@@ -1,5 +1,7 @@
 //import 'package:example/simple_example/bonfire_ref.dart';
 import 'package:bonfire/bonfire.dart';
+import 'package:example/shared/interface/knight_interface.dart';
+import 'package:example/shared/player/knight.dart';
 
 //import 'package:bonfire/background/background_image_game.dart';
 
@@ -79,6 +81,7 @@ class SimpleExampleGame extends StatelessWidget {
         smoothCameraSpeed: 2,
       ),
       player: MyPlayer(Vector2(100, 75)),
+      interface: KnightInterface(),
     );
   }
 }
