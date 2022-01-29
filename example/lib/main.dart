@@ -29,13 +29,14 @@ class Menu extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
               'Die zerfallene Drehbank',
-              style: TextStyle(fontSize: 60, color: Colors.white),
+              style: TextStyle(fontSize: 30, color: Colors.white),
             ),
             SizedBox(
-              height: 70,
+              height: 30,
             ),
             SizedBox(
               width: 300,
@@ -58,15 +59,15 @@ class Menu extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 150,
+              height: 20,
             ),
             SizedBox(
-              height: 100,
-              child: Text('SPRACHE',
-                  style: TextStyle(fontSize: 40), textAlign: TextAlign.center),
+              height: 30,
+              child: Text('SPRACHEN',
+                  style: TextStyle(fontSize: 10), textAlign: TextAlign.center),
             ),
             SizedBox(
-              width: 200,
+              width: 150,
               child: ElevatedButton(
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all(
@@ -85,7 +86,7 @@ class Menu extends StatelessWidget {
               height: 10,
             ),
             SizedBox(
-              width: 200,
+              width: 150,
               child: ElevatedButton(
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all(

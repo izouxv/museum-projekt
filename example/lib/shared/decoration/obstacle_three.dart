@@ -19,8 +19,8 @@ class ObstacleThree extends GameDecoration with Sensor {
 
   @override
   void onContact(GameComponent collision) {
-    FlameAudio.play('itemget.mp3');
     if (collision is Knight) {
+      FlameAudio.play('itemget.mp3');
       collision.containObstacleThree = true;
       _showConversation = true;
       _showIntroduction();
