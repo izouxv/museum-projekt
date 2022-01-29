@@ -4,6 +4,7 @@ import 'package:example/shared/decoration/torch.dart';
 import 'package:example/shared/interface/knight_interface.dart';
 
 import 'package:bonfire/background/background_image_game.dart';
+import 'package:example/shared/player/knight.dart';
 
 import 'package:example/simple_example/my_player.dart';
 import 'package:flutter/material.dart';
@@ -82,7 +83,7 @@ class SimpleExampleGame extends StatelessWidget {
         smoothCameraEnabled: true,
         smoothCameraSpeed: 2,
       ),
-      player: MyPlayer(Vector2(100, 75)),
+      player: Knight(Vector2(100, 75)),
       interface: PlayerInterface(),
     );
   }

@@ -1,10 +1,36 @@
 import 'package:bonfire/bonfire.dart';
+//import 'package:flame/sprite.dart';
 import 'package:example/shared/player/knight.dart';
+//import 'package:example/shared/player/knight.dart';
 import 'package:flutter/material.dart';
 
 class PlayerInterface extends GameInterface {
-  static const followerWidgetTestId = 'BUTTON';
+  //static const followerWidgetTestId = 'BUTTON';
+  late Sprite key;
+  //KnightInterface();
 
+  @override
+  Future<void> onLoad() async {
+    key = await Sprite.load('blue_button1.png');
+    //add(BarLifeComponent());
+    return super.onLoad();
+  }
+
+  @override
+  void render(Canvas canvas) {
+    try {
+      _drawKey(canvas);
+    } catch (e) {}
+    super.render(canvas);
+  }
+
+  void _drawKey(Canvas c) {
+    if (gameRef.player != null && (gameRef.player as Knight).containKey) {
+      key.renderRect(c, Rect.fromLTWH(150, 20, 35, 30));
+    }
+  }
+
+/*
   @override
   void onMount() {
     add(InterfaceComponent(
@@ -12,56 +38,12 @@ class PlayerInterface extends GameInterface {
       spriteSelected: Sprite.load('blue_button2.png'),
       size: Vector2(40, 40),
       id: 5,
-      position: Vector2(250, 20),
-      selectable: true,
-      onTapComponent: (selected) {
-        if (!selected && FollowerWidget.isVisible(followerWidgetTestId)) {
-          FollowerWidget.remove(followerWidgetTestId);
-          return;
-        }
-        gameRef.player?.let((player) {
-          FollowerWidget.show(
-            identify: followerWidgetTestId,
-            context: context,
-            target: player,
-            child: Container(
-              height: 50,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5),
-              ),
-              padding: EdgeInsets.all(10),
-              child: ElevatedButton(
-                onPressed: () {
-                  print('Tapped');
-                },
-                child: Text('Tap here'),
-              ),
-            ),
-            align: Offset(0, -55),
-          );
-        });
-      },
-    ));
-    add(InterfaceComponent(
-      sprite: Sprite.load('blue_button1.png'),
-      spriteSelected: Sprite.load('blue_button2.png'),
-      size: Vector2(40, 40),
-      id: 5,
       position: Vector2(300, 20),
       selectable: false,
-      onTapComponent: (selected) {
-        if (gameRef.colorFilter?.config.color == null) {
-          gameRef.colorFilter?.animateTo(
-            Colors.red.withOpacity(0.5),
-          );
-        } else {
-          gameRef.colorFilter?.animateTo(Colors.transparent, onFinish: () {
-            gameRef.colorFilter?.config.color = null;
-          });
-        }
-      },
     ));
+  }
+  */
+  /*
     add(TextInterfaceComponent(
       text: 'Text example',
       textConfig: TextStyle(
@@ -76,5 +58,6 @@ class PlayerInterface extends GameInterface {
       },
     ));
     super.onMount();
-  }
+
+  */
 }
