@@ -6,13 +6,14 @@ import 'package:flutter/material.dart';
 
 class PlayerInterface extends GameInterface {
   //static const followerWidgetTestId = 'BUTTON';
-  late Sprite key;
+  late Sprite obstacleOne;
+  late Sprite obstacleTwo;
   //KnightInterface();
 
   @override
   Future<void> onLoad() async {
-    key = await Sprite.load('blue_button1.png');
-    //add(BarLifeComponent());
+    obstacleOne = await Sprite.load('blue_button1.png');
+    obstacleTwo = await Sprite.load('joystick_knob.png');
     return super.onLoad();
   }
 
@@ -26,7 +27,11 @@ class PlayerInterface extends GameInterface {
 
   void _drawKey(Canvas c) {
     if (gameRef.player != null && (gameRef.player as Knight).containKey) {
-      key.renderRect(c, Rect.fromLTWH(150, 20, 35, 30));
+      obstacleOne.renderRect(c, Rect.fromLTWH(150, 20, 35, 30));
+    }
+    if (gameRef.player != null &&
+        (gameRef.player as Knight).containObstacleTwo) {
+      obstacleTwo.renderRect(c, Rect.fromLTWH(200, 50, 50, 50));
     }
   }
 
