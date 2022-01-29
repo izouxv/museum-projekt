@@ -1,6 +1,6 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
-import 'package:example/simple_example/text.dart';
+import 'package:example/lauf_project/text.dart';
 import 'package:flutter/widgets.dart';
 
 class WizardNPC extends GameDecoration {
