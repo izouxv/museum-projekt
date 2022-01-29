@@ -12,7 +12,7 @@ class Chest extends GameDecoration with TapGesture {
   Chest(Vector2 position)
       : super.withAnimation(
           animation: CommonSpriteSheet.chestAnimated,
-          size: Vector2.all(DungeonMap.tileSize * 0.6),
+          size: Vector2.all(DungeonMap.tileSize * 1),
           position: position,
         ) {
     _textConfig = TextPaint(
