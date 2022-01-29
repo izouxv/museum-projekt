@@ -71,7 +71,7 @@ class Chest extends GameDecoration with TapGesture {
     gameRef.add(
       ObstacleOne(
         Vector2(
-          position.translate(width * 0, 0).x,
+          position.translate(width * 3, 3).x,
           position.y - height * 0,
         ),
       ),
