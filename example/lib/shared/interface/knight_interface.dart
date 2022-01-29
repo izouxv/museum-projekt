@@ -8,12 +8,14 @@ class PlayerInterface extends GameInterface {
   //static const followerWidgetTestId = 'BUTTON';
   late Sprite obstacleOne;
   late Sprite obstacleTwo;
+  late Sprite obstacleThree;
   //KnightInterface();
 
   @override
   Future<void> onLoad() async {
     obstacleOne = await Sprite.load('blue_button1.png');
     obstacleTwo = await Sprite.load('joystick_knob.png');
+    obstacleThree = await Sprite.load('joystick_knob.png');
     return super.onLoad();
   }
 
@@ -32,6 +34,10 @@ class PlayerInterface extends GameInterface {
     }
     if (gameRef.player != null &&
         (gameRef.player as Knight).containObstacleTwo) {
+      obstacleTwo.renderRect(c, Rect.fromLTWH(200, 50, 50, 50));
+    }
+    if (gameRef.player != null &&
+        (gameRef.player as Knight).containObstacleThree) {
       obstacleTwo.renderRect(c, Rect.fromLTWH(200, 50, 50, 50));
     }
   }

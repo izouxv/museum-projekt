@@ -35,7 +35,7 @@ class ObstacleTwo extends GameDecoration with Sensor {
         [
           Say(
             text: [
-              TextSpan(text: Texter().getText('obstacle01')),
+              TextSpan(text: Texter().getText('obstacle02')),
             ],
           ),
         ],

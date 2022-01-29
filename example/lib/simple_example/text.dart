@@ -14,6 +14,14 @@ class Texter {
         case 'obstacle01':
           setText = 'Sehr gut, du hast Obstacle 1 gefunden! BESCHREIBUNG...';
       }
+      switch (textId) {
+        case 'obstacle02':
+          setText = 'Sehr gut, du hast Obstacle 1 gefunden! BESCHREIBUNG...';
+      }
+      switch (textId) {
+        case 'obstacle03':
+          setText = 'Sehr gut, du hast Obstacle 1 gefunden! BESCHREIBUNG...';
+      }
     }
 
     if (languageSet == 'eng') {

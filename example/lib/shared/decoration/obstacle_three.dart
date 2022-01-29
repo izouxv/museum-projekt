@@ -1,4 +1,5 @@
 import 'package:bonfire/bonfire.dart';
+import 'package:example/shared/player/knight.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:example/manual_map/dungeon_map.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
@@ -18,7 +19,8 @@ class ObstacleThree extends GameDecoration with Sensor {
   @override
   void onContact(GameComponent collision) {
     FlameAudio.play('itemget.mp3');
-    if (collision is Player) {
+    if (collision is Knight) {
+      collision.containObstacleThree = true;
       _showConversation = true;
       _showIntroduction();
 
@@ -33,7 +35,7 @@ class ObstacleThree extends GameDecoration with Sensor {
         [
           Say(
             text: [
-              TextSpan(text: Texter().getText('obstacle01')),
+              TextSpan(text: Texter().getText('obstacle03')),
             ],
           ),
         ],

@@ -25,6 +25,7 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision, MouseGesture {
   Goblin? enemyControlled;
   bool containObstacleOne = false;
   bool containObstacleTwo = false;
+  bool containObstacleThree = false;
 
   Rect _rectHover = Rect.fromLTWH(
     0,
