@@ -43,7 +43,6 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision, MouseGesture {
           animation: PlayerSpriteSheet.simpleDirectionAnimation,
           size: Vector2.all(DungeonMap.tileSize),
           position: position,
-          life: 200,
           speed: maxSpeed,
         ) {
     // for the default 8 way movement
@@ -109,18 +108,6 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision, MouseGesture {
     }
 
     super.joystickAction(event);
-  }
-
-  @override
-  void die() {
-    removeFromParent();
-    gameRef.add(
-      GameDecoration.withSprite(
-          sprite: Sprite.load('player/crypt.png'),
-          position: position,
-          size: Vector2.all(DungeonMap.tileSize)),
-    );
-    super.die();
   }
 
   void actionAttack() {

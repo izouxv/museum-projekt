@@ -1,9 +1,6 @@
 import 'package:bonfire/bonfire.dart';
-//import 'package:example/manual_map/game_manual_map.dart';
 import 'package:example/lauf_project/simple_example_game.dart';
 
-//import 'package:example/tiled_map/game_tiled_map.dart';
-//import 'package:flutter/cupertino.dart';‚
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 

@@ -50,8 +50,8 @@ class SimpleExampleGame extends StatelessWidget {
   const SimpleExampleGame({Key? key}) : super(key: key);
   Widget build(BuildContext context) {
     //Background Music
-    FlameAudio.loopLongAudio('background.mp3', volume: 0.1);
     return LayoutBuilder(builder: (context, constraints) {
+      FlameAudio.loopLongAudio('background.mp3', volume: 0.1);
       DungeonMap.tileSize =
           max(constraints.maxHeight, constraints.maxWidth) / (kIsWeb ? 25 : 22);
       return BonfireTiledWidget(
@@ -83,7 +83,7 @@ class SimpleExampleGame extends StatelessWidget {
           smoothCameraSpeed: 2,
         ),
         player: Knight(
-          Vector2((8 * DungeonMap.tileSize), (5 * DungeonMap.tileSize)),
+          Vector2((3 * DungeonMap.tileSize), (2 * DungeonMap.tileSize)),
         ),
         interface: PlayerInterface(),
       );
