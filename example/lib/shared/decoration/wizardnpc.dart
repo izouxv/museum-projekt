@@ -1,4 +1,5 @@
 import 'package:bonfire/bonfire.dart';
+import 'package:example/manual_map/dungeon_map.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/lauf_project/text.dart';
 import 'package:flutter/widgets.dart';
@@ -10,7 +11,7 @@ class WizardNPC extends GameDecoration {
   ) : super.withAnimation(
             animation: CommonSpriteSheet.npcAnimated,
             position: position,
-            size: Vector2(32 * 0.8, 32));
+            size: Vector2.all(DungeonMap.tileSize * 0.8));
 
 // Player Detection
   @override
