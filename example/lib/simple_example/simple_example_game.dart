@@ -6,7 +6,6 @@ import 'package:example/shared/interface/knight_interface.dart';
 import 'package:bonfire/background/background_image_game.dart';
 import 'package:example/shared/player/knight.dart';
 
-import 'package:example/simple_example/my_player.dart';
 import 'package:flutter/material.dart';
 
 import 'package:example/shared/decoration/chest.dart';
@@ -15,18 +14,8 @@ import 'package:example/shared/decoration/chest_three.dart';
 import 'package:example/shared/decoration/wizardnpc.dart';
 
 import 'package:flame_audio/flame_audio.dart';
-//import 'package:example/shared/decoration/barrel_dragable.dart';
-//import 'package:example/shared/decoration/torch.dart';
-//import 'package:example/shared/enemy/goblin.dart';
-//import 'package:example/manual_map/dungeon_map.dart';
 
 import 'package:bonfire/base/bonfire_game_interface.dart';
-//import 'package:flame/components.dart';
-
-//import 'package:example/shared/util/player_sprite_sheet.dart';
-//import 'package:example/shared/util/common_sprite_sheet.dart';
-//import 'package:example/simple_example/text.dart';
-//import 'package:example/shared/decoration/mission01.dart';
 
 String languageSet = 'ger';
 String streamText = 'BEGIN';
@@ -57,7 +46,6 @@ mixin BonfireHasGameRef {
 
 class SimpleExampleGame extends StatelessWidget {
   const SimpleExampleGame({Key? key}) : super(key: key);
-
   Widget build(BuildContext context) {
     //Background Music
     FlameAudio.loopLongAudio('background.mp3', volume: 0.1);

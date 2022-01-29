@@ -4,9 +4,7 @@ import 'package:bonfire/bonfire.dart';
 import 'package:example/manual_map/dungeon_map.dart';
 import 'package:example/shared/decoration/barrel_dragable.dart';
 import 'package:example/shared/decoration/chest.dart';
-import 'package:example/shared/decoration/spikes.dart';
 import 'package:example/shared/decoration/torch.dart';
-import 'package:example/shared/enemy/goblin.dart';
 import 'package:example/shared/interface/knight_interface.dart';
 import 'package:example/shared/player/knight.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -69,10 +67,7 @@ class GameTiledMap extends StatelessWidget {
             'tiled/mapa$map.json',
             forceTileSize: Size(DungeonMap.tileSize, DungeonMap.tileSize),
             objectsBuilder: {
-              'goblin': (properties) => Goblin(properties.position),
               'torch': (properties) => Torch(properties.position),
-              'barrel': (properties) => BarrelDraggable(properties.position),
-              'spike': (properties) => Spikes(properties.position),
               'column': (properties) => ColumnDecoration(properties.position),
               'chest': (properties) => Chest(properties.position),
             },

@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:bonfire/bonfire.dart';
 import 'package:example/manual_map/dungeon_map.dart';
-import 'package:example/shared/enemy/goblin.dart';
+
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/shared/util/player_sprite_sheet.dart';
 import 'package:flutter/foundation.dart';
@@ -22,7 +22,7 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision, MouseGesture {
   Sprite? spriteDirectionAttack;
   bool execAttackRange = false;
   bool canShowEmoteFromHover = true;
-  Goblin? enemyControlled;
+
   bool containObstacleOne = false;
   bool containObstacleTwo = false;
   bool containObstacleThree = false;
@@ -237,34 +237,6 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision, MouseGesture {
         ),
       ),
     );
-  }
-
-  void changeControllerToVisibleEnemy() {
-    if (hasGameRef && !gameRef.camera.isMoving) {
-      if (enemyControlled == null) {
-        final v = gameRef
-            .visibleEnemies()
-            .where((element) => element is Goblin)
-            .cast<Goblin>();
-        if (v.isNotEmpty) {
-          enemyControlled = v.first;
-          enemyControlled?.enableBehaviors = false;
-          gameRef.addJoystickObserver(
-            enemyControlled!,
-            cleanObservers: true,
-            moveCameraToTarget: true,
-          );
-        }
-      } else {
-        gameRef.addJoystickObserver(
-          this,
-          cleanObservers: true,
-          moveCameraToTarget: true,
-        );
-        enemyControlled?.enableBehaviors = true;
-        enemyControlled = null;
-      }
-    }
   }
 
   void _showTalk(Enemy first) {

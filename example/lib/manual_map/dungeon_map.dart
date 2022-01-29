@@ -1,11 +1,8 @@
 import 'dart:math';
 
 import 'package:bonfire/bonfire.dart';
-import 'package:example/shared/decoration/barrel_dragable.dart';
 import 'package:example/shared/decoration/chest.dart';
-import 'package:example/shared/decoration/spikes.dart';
 import 'package:example/shared/decoration/torch.dart';
-import 'package:example/shared/enemy/goblin.dart';
 
 class DungeonMap {
   static double tileSize = 45;
@@ -126,18 +123,6 @@ class DungeonMap {
 
   static List<GameDecoration> decorations() {
     return [
-      Spikes(
-        getRelativeTilePosition(7, 7),
-      ),
-      BarrelDraggable(getRelativeTilePosition(8, 6)),
-      GameDecorationWithCollision.withSprite(
-        sprite: Sprite.load('itens/barrel.png'),
-        position: getRelativeTilePosition(10, 6),
-        size: Vector2(tileSize, tileSize),
-        collisions: [
-          CollisionArea.rectangle(size: Vector2(tileSize / 1.5, tileSize / 1.5))
-        ],
-      ),
       Chest(getRelativeTilePosition(18, 7)),
       GameDecorationWithCollision.withSprite(
         sprite: Sprite.load('itens/table.png'),
@@ -179,13 +164,6 @@ class DungeonMap {
         position: getRelativeTilePosition(14, 4),
         size: Vector2(tileSize, tileSize),
       )
-    ];
-  }
-
-  static List<Enemy> enemies() {
-    return [
-      Goblin(getRelativeTilePosition(14, 6)),
-      Goblin(getRelativeTilePosition(25, 6)),
     ];
   }
 
