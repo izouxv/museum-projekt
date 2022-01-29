@@ -9,9 +9,9 @@ class PlayerInterface extends GameInterface {
 
   @override
   Future<void> onLoad() async {
-    obstacleOne = await Sprite.load('blue_button1.png');
-    obstacleTwo = await Sprite.load('joystick_knob.png');
-    obstacleThree = await Sprite.load('joystick_knob.png');
+    obstacleOne = await Sprite.load('itens/obstacle_one_inventory.png');
+    obstacleTwo = await Sprite.load('itens/obstacle_two_inventory.png');
+    obstacleThree = await Sprite.load('itens/obstacle_three_inventory.png');
     return super.onLoad();
   }
 
@@ -26,15 +26,15 @@ class PlayerInterface extends GameInterface {
   void _drawObstacles(Canvas c) {
     if (gameRef.player != null &&
         (gameRef.player as Knight).containObstacleOne) {
-      obstacleOne.renderRect(c, Rect.fromLTWH(150, 20, 35, 30));
+      obstacleOne.renderRect(c, Rect.fromLTWH(150, 20, 50, 50));
     }
     if (gameRef.player != null &&
         (gameRef.player as Knight).containObstacleTwo) {
-      obstacleTwo.renderRect(c, Rect.fromLTWH(200, 50, 50, 50));
+      obstacleTwo.renderRect(c, Rect.fromLTWH(225, 20, 50, 50));
     }
     if (gameRef.player != null &&
         (gameRef.player as Knight).containObstacleThree) {
-      obstacleTwo.renderRect(c, Rect.fromLTWH(200, 50, 50, 50));
+      obstacleThree.renderRect(c, Rect.fromLTWH(300, 20, 50, 50));
     }
   }
 }

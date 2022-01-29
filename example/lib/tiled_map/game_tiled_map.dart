@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:bonfire/bonfire.dart';
 import 'package:example/manual_map/dungeon_map.dart';
-import 'package:example/shared/decoration/barrel_dragable.dart';
 import 'package:example/shared/decoration/chest.dart';
 import 'package:example/shared/decoration/torch.dart';
 import 'package:example/shared/interface/knight_interface.dart';
