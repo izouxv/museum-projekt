@@ -40,6 +40,11 @@ class WizardNPC extends GameDecoration {
               TextSpan(text: Texter().getText('intro01')),
             ],
             personSayDirection: PersonSayDirection.RIGHT,
+            person: Container(
+              width: 100,
+              height: 100,
+              child: CommonSpriteSheet.npcAnimated.asWidget(),
+            ),
           ),
         ],
         onChangeTalk: (index) {},

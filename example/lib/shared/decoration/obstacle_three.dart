@@ -7,6 +7,7 @@ import 'package:example/lauf_project/text.dart';
 import 'package:flutter/widgets.dart';
 
 class ObstacleThree extends GameDecoration with Sensor {
+  // ignore: unused_field
   bool _showConversation = false;
 
   ObstacleThree(Vector2 position)
@@ -37,6 +38,11 @@ class ObstacleThree extends GameDecoration with Sensor {
             text: [
               TextSpan(text: Texter().getText('obstacle03')),
             ],
+            person: Container(
+              width: 100,
+              height: 100,
+              child: CommonSpriteSheet.obstacleThreeSprite.asWidget(),
+            ),
           ),
         ],
         onChangeTalk: (index) {},
