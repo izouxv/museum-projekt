@@ -11,9 +11,9 @@ class WizardNPC extends GameDecoration {
   ) : super.withAnimation(
             animation: CommonSpriteSheet.npcAnimated,
             position: position,
-            size: Vector2.all(DungeonMap.tileSize * 0.8));
+            size: Vector2.all(DungeonMap.tileSize * 1));
 
-// Player Detection
+  // Player Detection
   @override
   void update(double dt) {
     super.update(dt);
@@ -31,7 +31,7 @@ class WizardNPC extends GameDecoration {
     }
   }
 
-// talk Dialog
+  // talk Dialog
   void _showIntroduction() {
     TalkDialog.show(
         gameRef.context,
