@@ -20,13 +20,14 @@ class PlayerInterface extends GameInterface {
   @override
   void render(Canvas canvas) {
     try {
-      _drawKey(canvas);
+      _drawObstacles(canvas);
     } catch (e) {}
     super.render(canvas);
   }
 
-  void _drawKey(Canvas c) {
-    if (gameRef.player != null && (gameRef.player as Knight).containKey) {
+  void _drawObstacles(Canvas c) {
+    if (gameRef.player != null &&
+        (gameRef.player as Knight).containObstacleOne) {
       obstacleOne.renderRect(c, Rect.fromLTWH(150, 20, 35, 30));
     }
     if (gameRef.player != null &&

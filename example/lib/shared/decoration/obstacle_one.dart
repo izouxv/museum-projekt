@@ -20,7 +20,7 @@ class ObstacleOne extends GameDecoration with Sensor {
   void onContact(GameComponent collision) {
     FlameAudio.play('itemget.mp3');
     if (collision is Knight) {
-      collision.containKey = true;
+      collision.containObstacleOne = true;
       _showConversation = true;
       _showIntroduction();
 

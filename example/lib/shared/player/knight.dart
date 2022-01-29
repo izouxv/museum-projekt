@@ -23,7 +23,7 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision, MouseGesture {
   bool execAttackRange = false;
   bool canShowEmoteFromHover = true;
   Goblin? enemyControlled;
-  bool containKey = false;
+  bool containObstacleOne = false;
   bool containObstacleTwo = false;
 
   Rect _rectHover = Rect.fromLTWH(
