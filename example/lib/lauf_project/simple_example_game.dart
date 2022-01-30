@@ -2,6 +2,7 @@
 import 'package:bonfire/bonfire.dart';
 import 'package:example/shared/decoration/torch.dart';
 import 'package:example/shared/decoration/wizardnpc2.dart';
+import 'package:example/shared/decoration/wizardnpc3.dart';
 import 'package:example/shared/interface/knight_interface.dart';
 import 'package:example/manual_map/dungeon_map.dart';
 import 'package:example/shared/player/knight.dart';
@@ -73,6 +74,7 @@ class SimpleExampleGame extends StatelessWidget {
             'chest_three': (properties) => ChestThree(properties.position),
             'wizardnpc': (properties) => WizardNPC(properties.position),
             'wizardnpc2': (properties) => WizardNPC2(properties.position),
+            'wizardnpc3': (properties) => WizardNPC3(properties.position),
             'torch': (properties) => Torch(properties.position)
           },
         ),

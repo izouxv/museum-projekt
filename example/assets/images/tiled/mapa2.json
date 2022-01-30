@@ -473,6 +473,17 @@
                  "width":16,
                  "x":756,
                  "y":15.3333333333333
+                }, 
+                {
+                 "height":16,
+                 "id":151,
+                 "name":"wizardnpc3",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":760.666666666667,
+                 "y":646.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -481,7 +492,7 @@
          "y":0
         }],
  "nextlayerid":25,
- "nextobjectid":151,
+ "nextobjectid":152,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",

@@ -1,4 +1,5 @@
 import 'package:bonfire/bonfire.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:example/manual_map/dungeon_map.dart';
 import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/lauf_project/text.dart';
@@ -22,6 +23,7 @@ class WizardNPC2 extends GameDecoration {
         gameRef.player!,
         observed: (player) {
           if (!_showConversation) {
+            FlameAudio.play('wizardnpc.wav');
             _showConversation = true;
             _showIntroduction();
           }

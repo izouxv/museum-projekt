@@ -16,6 +16,11 @@ class Texter {
               'Willkommen in der Halle der Könige! Hier gibt es viele Schätze und leider auch viele Truhen. Dennoch hoffe ich, dass du die Richtige findest. Wenn du fertig bist folge dem Gang südlich zur großen Gruft.';
       }
       switch (textId) {
+        case 'quest02':
+          setText =
+              'Jaja die große Gruft, ein wahrlich dunkler Ort... Wenn du mutig genug bist mach dich auf die Suche nach der letzten Schatztruhe!';
+      }
+      switch (textId) {
         case 'obstacle01':
           setText =
               'Ohne das Gehäuse würde die Drehmaschine in sich zusammenfallen. Es dient jedoch nicht nur als Halterung für das Innenleben sondern auch zum Schutz. Neben der Maschine bewahrt es auch den Menschen der sie bedient Schaden zu nehmen. Die vielen Bleche schützen zum Beispiel davor, dass er aus Versehen zwischen die Zahnräder greift.';
@@ -42,6 +47,11 @@ class Texter {
         case 'quest01':
           setText =
               'Welcome to the Hall of Kings! Here there are many treasures and unfortunately also many chests. Still, I hope you find the right one. When youre done, follow the passage south to the great tomb.';
+      }
+      switch (textId) {
+        case 'quest02':
+          setText =
+              'Ohh yeah, the great tomb, a truly dark place. . . If youre brave enough, go and search of the last treasure chest!';
       }
       switch (textId) {
         case 'obstacle01':
