@@ -1,5 +1,5 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/lauf_project/simple_example_game.dart';
+import 'package:example/lauf_project/game.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

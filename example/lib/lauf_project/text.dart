@@ -1,4 +1,4 @@
-import 'package:example/lauf_project/simple_example_game.dart';
+import 'package:example/lauf_project/game.dart';
 
 class Texter {
   String getText(String textId) {
