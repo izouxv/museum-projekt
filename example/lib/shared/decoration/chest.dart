@@ -37,7 +37,7 @@ class Chest extends GameDecoration with TapGesture {
         notObserved: () {
           _observedPlayer = false;
         },
-        radiusVision: DungeonMap.tileSize,
+        radiusVision: (2 * 32),
       );
     }
     super.update(dt);

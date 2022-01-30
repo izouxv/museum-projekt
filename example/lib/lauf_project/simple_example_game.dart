@@ -1,9 +1,9 @@
 //import 'package:example/simple_example/bonfire_ref.dart';
 import 'package:bonfire/bonfire.dart';
 import 'package:example/shared/decoration/torch.dart';
+import 'package:example/shared/decoration/wizardnpc2.dart';
 import 'package:example/shared/interface/knight_interface.dart';
 import 'package:example/manual_map/dungeon_map.dart';
-import 'package:bonfire/background/background_image_game.dart';
 import 'package:example/shared/player/knight.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
@@ -72,11 +72,10 @@ class SimpleExampleGame extends StatelessWidget {
             'chest_two': (properties) => ChestTwo(properties.position),
             'chest_three': (properties) => ChestThree(properties.position),
             'wizardnpc': (properties) => WizardNPC(properties.position),
+            'wizardnpc2': (properties) => WizardNPC2(properties.position),
             'torch': (properties) => Torch(properties.position)
           },
         ),
-        background: BackgroundImageGame(
-            imagePath: "tiled/image_bg.jpeg", offset: Vector2(-50, -50)),
         lightingColorGame: Colors.black.withOpacity(0.7),
         cameraConfig: CameraConfig(
           smoothCameraEnabled: true,

@@ -4,9 +4,9 @@ import 'package:example/shared/util/common_sprite_sheet.dart';
 import 'package:example/lauf_project/text.dart';
 import 'package:flutter/widgets.dart';
 
-class WizardNPC extends GameDecoration {
+class WizardNPC2 extends GameDecoration {
   bool _showConversation = false;
-  WizardNPC(
+  WizardNPC2(
     Vector2 position,
   ) : super.withAnimation(
             animation: CommonSpriteSheet.npcAnimated,
@@ -38,7 +38,7 @@ class WizardNPC extends GameDecoration {
         [
           Say(
             text: [
-              TextSpan(text: Texter().getText('intro01')),
+              TextSpan(text: Texter().getText('quest01')),
             ],
             personSayDirection: PersonSayDirection.RIGHT,
             person: Container(
