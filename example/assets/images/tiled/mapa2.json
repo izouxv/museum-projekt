@@ -10,7 +10,7 @@
          "offsety":-100,
          "opacity":0.6,
          "type":"imagelayer",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
