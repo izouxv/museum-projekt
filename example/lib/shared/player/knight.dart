@@ -110,6 +110,18 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision, MouseGesture {
     super.joystickAction(event);
   }
 
+  @override
+  void die() {
+    removeFromParent();
+    gameRef.add(
+      GameDecoration.withSprite(
+          sprite: Sprite.load('player/crypt.png'),
+          position: position,
+          size: Vector2.all(DungeonMap.tileSize)),
+    );
+    super.die();
+  }
+
   void actionAttack() {
     if (stamina < 15) return;
 

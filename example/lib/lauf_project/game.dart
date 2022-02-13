@@ -84,7 +84,7 @@ class SimpleExampleGame extends StatelessWidget {
           smoothCameraSpeed: 2,
         ),
         player: Knight(
-          Vector2((3 * DungeonMap.tileSize), (2 * DungeonMap.tileSize)),
+          Vector2((8 * DungeonMap.tileSize), (5 * DungeonMap.tileSize)),
         ),
         interface: PlayerInterface(),
       );
