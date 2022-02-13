@@ -156,7 +156,7 @@ class CommonSpriteSheet {
         "itens/npc_spritesheet.png",
         SpriteAnimationData.sequenced(
           amount: 6,
-          stepTime: 0.1,
+          stepTime: 0.2,
           textureSize: Vector2(16, 16),
         ),
       );

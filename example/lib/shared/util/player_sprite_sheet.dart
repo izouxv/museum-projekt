@@ -14,7 +14,7 @@ class PlayerSpriteSheet {
         "player/knight_idle.png",
         SpriteAnimationData.sequenced(
           amount: 6,
-          stepTime: 0.1,
+          stepTime: 0.5,
           textureSize: Vector2(16, 16),
         ),
       );
